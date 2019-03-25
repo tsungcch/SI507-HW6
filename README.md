@@ -109,15 +109,15 @@ Some JavaScript code
 	* White
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
-```js
-p{
-	background-color: #b3b3b3;
-	border: 3px solid #0000FF;
-	padding: 3%;
-	font-size: 1.1em;
-	line-height: 1.5;
-}
-```
+	```js
+	p{
+		background-color: #b3b3b3;
+		border: 3px solid #0000FF;
+		padding: 3%;
+		font-size: 1.1em;
+		line-height: 1.5;
+	}
+	```
 
 	* Here defines how the paragraph looks like. So I replace the color code to be 0000FF which is blue.
 
@@ -126,16 +126,16 @@ p{
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
-```js
-function handleClick(){
-	alert("hello");
-}
-```
-**and**
+	```js
+	function handleClick(){
+		alert("hello");
+	}
+	```
+	**and**
 
-```js
-<button onclick=handleClick() id="wow-button">Wow</button>
-```
+	```js
+	<button onclick=handleClick() id="wow-button">Wow</button>
+	```
 	* The last statement means there is a button called Wow and when users click on the button, handleClick() is going to be triggered and execute what's inside the function.
 
 
@@ -180,9 +180,9 @@ function handleClick(){
 
 	* The basic syntax of jQuery is as follows.
 	* $(selector).action()
-	* 	$ means acessing jQuery
-	* 	(selector) means to find or query HTML elements
-	* 	action() means after $(selector) returns an object which contains some functions, action(). By calling action(), it would be performed on the elements
+		* $ means acessing jQuery
+		* (selector) means to find or query HTML elements
+		* action() means after $(selector) returns an object which contains some functions, action(). By calling action(), it would be performed on the elements
 	* $(document).ready(function()): Waiting for the document to be fully loaded before any actions defined in function() running, which is wriiten inside a document ready event.
 	* $("form").submit(function(event): the structure is similar to the previous statement except for function(event), which means event handling function receives an event object, containing many properties and methods.
 
