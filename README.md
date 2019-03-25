@@ -78,7 +78,7 @@ Some JavaScript code
 ```
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
-	A line starting with // is a code comment, so put // in before a comment. 
+	* A line starting with // is a code comment, so put // in before a comment. 
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 	Open html file in a browser and then the javascript code inside of it will run.
@@ -156,11 +156,11 @@ function handleClick(){
 	This style region defines whenever there is a class called error, the element is going to be applied on color red; on the other hand, the element is blue if it belongs to class good.
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
-	It is a pattern expressed by regular expression, which means there are more than one and only alphabats no matter uppercase or lowercase and they are starting at the begining and ending at the end.
+	* It is a pattern expressed by regular expression, which means there are more than one and only alphabats no matter uppercase or lowercase and they are starting at the begining and ending at the end.
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
-	The only difference is how to define the scope of this conditional statement. 
-	JS uses curly braces; on the other hand, : and indentation are for Python.
+	* The only difference is how to define the scope of this conditional statement. 
+	* JS uses curly braces; on the other hand, : and indentation are for Python.
 
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
