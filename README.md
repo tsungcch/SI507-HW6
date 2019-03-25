@@ -78,26 +78,48 @@ Some JavaScript code
 ```
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
+	A line starting with // is a code comment, so put // in before a comment. 
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
+	Open html file in a browser and then the javascript code inside of it will run.
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
+	document.write(): write the message into HTML output
+	console.log(): display the message in the console
+	window.alert(): display the message in an alert box
+	console.log() is good for debuging to identify the range of where the bugs are. On the other hand, document.write() is for normal use to display a message in HTML output.
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
+	window.alert()
+
+
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
+	document.querySelector('h1').innerHTML = "Tsung-Chi Chang"; Change my name into Tsung-Chi Chang, and then this function would locate the h1 tage and replace what's inside with Tsung-Chi CHang
 
 * **What does the word `document` represent in this code? Explain briefly.**
+	It returns the object of the current file.
 
 * **What is happening in line 12 ( 
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
+	 The result of the right hand side would be how many elements defined to be tagged by 'li' are there in this file and it is assigned to the left to replace the content inside the span of #items.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
+	White
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
+	p{
+		background-color: #b3b3b3;
+		border: 3px solid #0000FF;
+		padding: 3%;
+		font-size: 1.1em;
+		line-height: 1.5;
+	}
+	Here defines how the paragraph looks like. So I replace the color code to be 0000FF which is blue.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+	<li oncopy='copyFunction2()'>McGill University</li> that copyFunction2() would be triggered when there is a copy operation on McGill University. This is how it works when doing copy on University of Michigan.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -111,7 +133,7 @@ function handleClick(){
 ```js
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
-
+	The last statement means there is a button called Wow and when users click on the button, handleClick() is going to be triggered and execute what's inside the function.
 
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
@@ -123,12 +145,26 @@ function handleClick(){
 * **Check out the file `jquerylib_submit_example.html`. This is an example of code that uses a package called `jQuery` (and this will need you to have an internet connection to run it properly, although the other file does not). Check out resources above for more on jQuery!**
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
+	<style type="text/css">
+    	.error{
+        	color: red;
+    	}
+    	.good {
+        	color: blue;
+    	}
+	</style>
+	This style region defines whenever there is a class called error, the element is going to be applied on color red; on the other hand, the element is blue if it belongs to class good.
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+	It is a pattern expressed by regular expression, which means there are more than one and only alphabats no matter uppercase or lowercase and they are starting at the begining and ending at the end.
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
+	The only difference is how to define the scope of this conditional statement. 
+	JS uses curly braces; on the other hand, : and indentation are for Python.
+
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+	It means the duration of the current display in milliseconds.
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
@@ -136,6 +172,13 @@ function handleClick(){
 $(document).ready(function(){
     $("form").submit(function(event){
 ```
+	The basic syntax of jQuery is as follows.
+	$(selector).action()
+		$ means acessing jQuery
+		(selector) means to find or query HTML elements
+		action() means after $(selector) returns an object which contains some functions, action(). By calling action(), it would be performed on the elements
+	$(document).ready(function()): Waiting for the document to be fully loaded before any actions defined in function() running, which is wriiten inside a document ready event.
+	$("form").submit(function(event): the structure is similar to the previous statement except for function(event), which means event handling function receives an event object, containing many properties and methods.
 
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
