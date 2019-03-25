@@ -148,16 +148,16 @@ function handleClick(){
 * **Check out the file `jquerylib_submit_example.html`. This is an example of code that uses a package called `jQuery` (and this will need you to have an internet connection to run it properly, although the other file does not). Check out resources above for more on jQuery!**
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
-```js
-	<style type="text/css">
-    	.error{
-        	color: red;
-    	}
-    	.good {
-        	color: blue;
-    	}
-	</style>
-```
+	```js
+		<style type="text/css">
+    		.error{
+        		color: red;
+    		}
+    		.good {
+        		color: blue;
+    		}
+		</style>
+	```
 	* This style region defines whenever there is a class called error, the element is going to be applied on color red; on the other hand, the element is blue if it belongs to class good.
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
@@ -173,10 +173,10 @@ function handleClick(){
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
-```js
-$(document).ready(function(){
-    $("form").submit(function(event){
-```
+	```js
+		$(document).ready(function(){
+    	$("form").submit(function(event){
+	```
 
 	* The basic syntax of jQuery is as follows.
 	* $(selector).action()
